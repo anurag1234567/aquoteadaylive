@@ -5,8 +5,8 @@ app.get('/',function(req,res){
     res.sendfile(__dirname + "/index.html");
 });
 
-var port=process.env.port || 3000;
+var portnumber=process.env.Port || 3000;
 
-var server=app.listen(port,function(req,res){
+var server=app.listen(portnumber,function(req,res){
     console.log("server started at port 3000");
 });
